@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start" icon="close">
+          <ion-button (click)="presentAlert()">
+            <ion-icon name="close" color="light"></ion-icon>
+          </ion-button>
+      </ion-buttons>
+      <ion-buttons slot="end" icon="close">
+          <ion-button ion-button color="light">Save</ion-button>
+      </ion-buttons>
+        
+      <ion-title color="light">Add New Record</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card >
+        <ion-list inset>          
+              
+          <ion-item style="padding: 2%">
+            <ion-label position="floating">Name(Suggested*)</ion-label>
+            <ion-input  type="text"></ion-input>
+          </ion-item>
+  
+          <ion-item style="padding: 2%">
+            <ion-label>Location</ion-label>
+              <ion-select value="Select" okText="Select" cancelText="Cancel" placeholder="Select">
+                <ion-select-option value="Kaju Kale">Kaju Kale</ion-select-option>
+                <ion-select-option value="Lagaan">Lagaan</ion-select-option>
+                <ion-select-option value="Ground">Ground</ion-select-option>
+                <ion-select-option value="Tennis Court">Tennis Court</ion-select-option>
+              </ion-select>
+          </ion-item>
+  
+          <ion-item style="padding: 2%">
+            <ion-label>Date</ion-label>
+            <ion-datetime displayFormat="DDD MMM D, YYYY" min="2016" max="2022" value="none" placeholder="Select"></ion-datetime>
+          </ion-item>
+            
+            
+          <ion-item style="padding: 2%">
+            <ion-label>Time</ion-label>
+            <ion-datetime displayFormat="h:mm a" placeholder="Select"></ion-datetime>
+          </ion-item>
+  
+          <ion-item style="padding: 2%">
+              <ion-label position="floating" >Specifications / Habits</ion-label>
+              <ion-textarea rows="3" cols="1" placeholder="Enter any notes here..."></ion-textarea>
+          </ion-item>
+  
+          <ion-item>
+            <input ion-button type="file" placeholder=" Select Images">
+          </ion-item>
+              
+        </ion-list>
+      
+      </ion-card>
+
+
+</ion-content>
