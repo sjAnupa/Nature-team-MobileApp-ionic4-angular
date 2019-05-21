@@ -1,5 +1,7 @@
 {
   "name": "Nature Team",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
